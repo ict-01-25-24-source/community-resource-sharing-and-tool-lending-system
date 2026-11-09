@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Community Tool Library</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Community Tool Library</a>
+    <a class="active" href="index.html">Dashboard</a>
+    <a href="items.html">Items</a>
+    <a href="borrowings.html">Borrowings</a>
+    <a href="login.html">Log out</a>
+  </nav>
+  <main class="container">
+    <h1>Dashboard</h1>
+
+    <section class="stats">
+      <div class="stat"><div class="value">8</div><div class="label">Items listed</div></div>
+      <div class="stat"><div class="value">5</div><div class="label">On the shelf</div></div>
+      <div class="stat"><div class="value">3</div><div class="label">Out on loan</div></div>
+    </section>
+
+    <section class="quick-links">
+      <a href="add-item.html" class="btn">Add item</a>
+      <a href="new-borrowing.html" class="btn btn-secondary">Record a borrowing</a>
+    </section>
+
+    <section>
+      <h2>Recent borrowings</h2>
+      <div class="panel table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr><th>Item</th><th>Borrower</th><th>Borrowed</th><th>Due back</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Hedge Trimmer</td><td>Tadala Mwale</td><td>5 Nov 2026</td><td>12 Nov 2026</td><td class="status-borrowed">Borrowed</td></tr>
+            <tr><td>Biology Textbook</td><td>Mercy Banda</td><td>3 Nov 2026</td><td>10 Nov 2026</td><td class="status-borrowed">Borrowed</td></tr>
+            <tr><td>Wheelbarrow</td><td>Chikondi Phiri</td><td>1 Nov 2026</td><td>8 Nov 2026</td><td class="status-overdue">Overdue</td></tr>
+            <tr><td>Cordless Drill</td><td>John Chirwa</td><td>25 Oct 2026</td><td>30 Oct 2026</td><td class="status-returned">Returned</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

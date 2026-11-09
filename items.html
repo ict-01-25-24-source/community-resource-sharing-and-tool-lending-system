@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Items | Community Tool Library</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Community Tool Library</a>
+    <a href="index.html">Dashboard</a>
+    <a class="active" href="items.html">Items</a>
+    <a href="borrowings.html">Borrowings</a>
+    <a href="login.html">Log out</a>
+  </nav>
+  <main class="container">
+    <h1>Items</h1>
+
+    <div class="toolbar">
+      <form action="#" method="get" class="search-form">
+        <input type="text" name="search" placeholder="Search by name" aria-label="Search by name">
+        <select name="category" aria-label="Category">
+          <option value="">All categories</option>
+          <option value="gardening">Gardening</option>
+          <option value="books">Books</option>
+          <option value="power-tools">Power tools</option>
+          <option value="kitchen">Kitchen</option>
+        </select>
+        <button type="submit" class="btn">Search</button>
+      </form>
+      <a href="add-item.html" class="btn">Add item</a>
+    </div>
+
+    <div class="panel table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr><th>No.</th><th>Item</th><th>Category</th><th>Description</th><th>Status</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>1</td><td>Garden Spade</td><td>Gardening</td><td>Steel spade with a wooden handle</td><td class="status-available">Available</td>
+              <td><a href="edit-item.html">Edit</a><a href="#" class="delete">Delete</a></td>
+            </tr>
+            <tr>
+              <td>2</td><td>Wheelbarrow</td><td>Gardening</td><td>Single wheel, tyre needs pumping now and then</td><td class="status-borrowed">Borrowed</td>
+              <td><a href="edit-item.html">Edit</a><a href="#" class="delete">Delete</a></td>
+            </tr>
+            <tr>
+              <td>3</td><td>Cordless Drill</td><td>Power tools</td><td>18V drill, two batteries and a charger</td><td class="status-available">Available</td>
+              <td><a href="edit-item.html">Edit</a><a href="#" class="delete">Delete</a></td>
+            </tr>
+            <tr>
+              <td>4</td><td>Biology Textbook</td><td>Books</td><td>Form 4 syllabus, a few pencil notes inside</td><td class="status-borrowed">Borrowed</td>
+              <td><a href="edit-item.html">Edit</a><a href="#" class="delete">Delete</a></td>
+            </tr>
+            <tr>
+              <td>5</td><td>Large Cooking Pot</td><td>Kitchen</td><td>20-litre aluminium pot with lid</td><td class="status-available">Available</td>
+              <td><a href="edit-item.html">Edit</a><a href="#" class="delete">Delete</a></td>
+            </tr>
+            <tr>
+              <td>6</td><td>Hedge Trimmer</td><td>Power tools</td><td>Electric, 5 m cable</td><td class="status-borrowed">Borrowed</td>
+              <td><a href="edit-item.html">Edit</a><a href="#" class="delete">Delete</a></td>
+            </tr>
+            <tr>
+              <td>7</td><td>Extension Cord</td><td>Power tools</td><td>10 m, four sockets</td><td class="status-available">Available</td>
+              <td><a href="edit-item.html">Edit</a><a href="#" class="delete">Delete</a></td>
+            </tr>
+            <tr>
+              <td>8</td><td>MSCE Past Papers</td><td>Books</td><td>Bound copy, 2015 to 2022</td><td class="status-available">Available</td>
+              <td><a href="edit-item.html">Edit</a><a href="#" class="delete">Delete</a></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
