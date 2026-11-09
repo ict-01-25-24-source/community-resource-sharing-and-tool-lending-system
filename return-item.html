@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Return an item | Community Tool Library</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Community Tool Library</a>
+    <a href="index.html">Dashboard</a>
+    <a href="items.html">Items</a>
+    <a class="active" href="borrowings.html">Borrowings</a>
+    <a href="login.html">Log out</a>
+  </nav>
+  <main class="container">
+    <h1>Return an item</h1>
+    <div class="panel form-panel">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="item">Item being returned</label>
+          <select id="item" name="item" required>
+            <option value="">Choose an item</option>
+            <option value="2">Wheelbarrow (Chikondi Phiri)</option>
+            <option value="4">Biology Textbook (Mercy Banda)</option>
+            <option value="6">Hedge Trimmer (Tadala Mwale)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="return-date">Date returned</label>
+          <input type="date" id="return-date" name="return_date" required>
+        </div>
+        <div class="form-group">
+          <label for="condition">Condition on return</label>
+          <select id="condition" name="condition">
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="damaged">Damaged</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Confirm return</button>
+          <a href="borrowings.html" class="btn btn-secondary">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

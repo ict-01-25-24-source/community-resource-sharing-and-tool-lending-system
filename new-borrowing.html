@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Record a borrowing | Community Tool Library</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Community Tool Library</a>
+    <a href="index.html">Dashboard</a>
+    <a href="items.html">Items</a>
+    <a class="active" href="borrowings.html">Borrowings</a>
+    <a href="login.html">Log out</a>
+  </nav>
+  <main class="container">
+    <h1>Record a borrowing</h1>
+    <div class="panel form-panel">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="item">Item</label>
+          <select id="item" name="item" required>
+            <option value="">Choose an item</option>
+            <option value="1">Garden Spade</option>
+            <option value="3">Cordless Drill</option>
+            <option value="5">Large Cooking Pot</option>
+            <option value="7">Extension Cord</option>
+            <option value="8">MSCE Past Papers</option>
+          </select>
+          <p class="hint">Only items that are on the shelf are listed.</p>
+        </div>
+        <div class="form-group">
+          <label for="borrower">Borrower's full name</label>
+          <input type="text" id="borrower" name="borrower" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="0999 000 000" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date-borrowed">Date borrowed</label>
+            <input type="date" id="date-borrowed" name="date_borrowed" required>
+          </div>
+          <div class="form-group">
+            <label for="return-date">Due back</label>
+            <input type="date" id="return-date" name="return_date" required>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Save borrowing</button>
+          <a href="borrowings.html" class="btn btn-secondary">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
