@@ -1,0 +1,13 @@
+.stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+.stat {
+  flex: 1;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+.stat .value { font-size: 28px; font-weight: 600; line-height: 1.2; }
+.stat .label { color: var(--muted); font-size: 14px; }
+.quick-links { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
