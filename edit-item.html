@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit item | Community Tool Library</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Community Tool Library</a>
+    <a href="index.html">Dashboard</a>
+    <a class="active" href="items.html">Items</a>
+    <a href="borrowings.html">Borrowings</a>
+    <a href="login.html">Log out</a>
+  </nav>
+  <main class="container">
+    <h1>Edit item</h1>
+    <div class="panel form-panel">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Item name</label>
+          <input type="text" id="name" name="name" value="Garden Spade" required>
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="gardening" selected>Gardening</option>
+            <option value="books">Books</option>
+            <option value="power-tools">Power tools</option>
+            <option value="kitchen">Kitchen</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description">Steel spade with a wooden handle</textarea>
+        </div>
+        <div class="form-group">
+          <label>Condition</label>
+          <div class="radio-group">
+            <label><input type="radio" name="condition" value="new"> New</label>
+            <label><input type="radio" name="condition" value="good" checked> Good</label>
+            <label><input type="radio" name="condition" value="fair"> Fair</label>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Save changes</button>
+          <a href="items.html" class="btn btn-secondary">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

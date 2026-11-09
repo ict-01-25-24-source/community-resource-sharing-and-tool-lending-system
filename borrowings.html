@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borrowings | Community Tool Library</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">Community Tool Library</a>
+    <a href="index.html">Dashboard</a>
+    <a href="items.html">Items</a>
+    <a class="active" href="borrowings.html">Borrowings</a>
+    <a href="login.html">Log out</a>
+  </nav>
+  <main class="container">
+    <h1>Borrowings</h1>
+
+    <div class="toolbar">
+      <p>Loans recorded this term.</p>
+      <a href="new-borrowing.html" class="btn">Record a borrowing</a>
+    </div>
+
+    <div class="panel table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr><th>No.</th><th>Item</th><th>Borrower</th><th>Phone</th><th>Borrowed</th><th>Due back</th><th>Status</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Wheelbarrow</td><td>Chikondi Phiri</td><td>0999 123 456</td><td>1 Nov 2026</td><td>8 Nov 2026</td><td class="status-overdue">Overdue</td><td><a href="return-item.html">Mark returned</a></td></tr>
+            <tr><td>2</td><td>Biology Textbook</td><td>Mercy Banda</td><td>0888 234 567</td><td>3 Nov 2026</td><td>10 Nov 2026</td><td class="status-borrowed">Borrowed</td><td><a href="return-item.html">Mark returned</a></td></tr>
+            <tr><td>3</td><td>Hedge Trimmer</td><td>Tadala Mwale</td><td>0991 345 678</td><td>5 Nov 2026</td><td>12 Nov 2026</td><td class="status-borrowed">Borrowed</td><td><a href="return-item.html">Mark returned</a></td></tr>
+            <tr><td>4</td><td>Cordless Drill</td><td>John Chirwa</td><td>0884 456 789</td><td>25 Oct 2026</td><td>30 Oct 2026</td><td class="status-returned">Returned</td><td>-</td></tr>
+            <tr><td>5</td><td>Garden Spade</td><td>Grace Nyirenda</td><td>0992 567 890</td><td>20 Oct 2026</td><td>27 Oct 2026</td><td class="status-returned">Returned</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
